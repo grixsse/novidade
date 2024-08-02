@@ -1,0 +1,6 @@
+/* Fundo degradê */
+body {
+    background: linear-gradient(to bottom, #12759f, #121726);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
