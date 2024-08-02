@@ -7,7 +7,10 @@ body {
 
 h1 {
 	color: #333;
+	text-align: center;
 }
+
 p {
 	color: #666;
+	text-align: center;
 }
