@@ -54,11 +54,25 @@ p {
     background-color: #1DA851;
 }
 
-	<div class="redes-sociais">
-		<a href="https://www.instagram.com/grixsoficial/" target="_blank">
-			<img src="instagram.png" alt="Instagram">
-		</a>
-		<a href="https://www.facebook.com/grixsse" target="_blank">
-			<img src="facebook.png" alt="Facebook">
-		</a>
-	</div>
+/* Botões redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+}
+
+.redes-sociais img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Mantém os ícones quadrados */
+    transition: transform 0.3s;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
