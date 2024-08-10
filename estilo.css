@@ -53,3 +53,12 @@ p {
 .whatsapp-button:hover {
     background-color: #1DA851;
 }
+
+	<div class="redes-sociais">
+		<a href="https://www.instagram.com/grixsoficial/" target="_blank">
+			<img src="instagram.png" alt="Instagram">
+		</a>
+		<a href="https://www.facebook.com/grixsse" target="_blank">
+			<img src="facebook.png" alt="Facebook">
+		</a>
+	</div>
