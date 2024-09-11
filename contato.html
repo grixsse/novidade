@@ -7,12 +7,13 @@
   <link rel="icon" href="logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-      	<!-- Open Graph meta tags -->
-	<meta property="og:title" content="Grixs">
-	<meta property="og:description" content="Bem-vindo ao site Grixs! Acompanhe as novidades e entre em contato conosco pelo WhatsApp.">
-	<meta property="og:image" content="https://i.ibb.co/LSLRmKM/LOGO-assinatura.png">
-	<meta property="og:url" content="https://www.grixs.com.br">
-	<meta property="og:type" content="website">
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Grixs">
+  <meta property="og:description" content="Bem-vindo ao site Grixs! Acompanhe as novidades e entre em contato conosco pelo WhatsApp.">
+  <meta property="og:image" content="https://i.ibb.co/LSLRmKM/LOGO-assinatura.png">
+  <meta property="og:url" content="https://www.grixs.com.br">
+  <meta property="og:type" content="website">
+  
   <style>
     :root {
       --primary-color: #02d3cc;
@@ -22,13 +23,19 @@
       --background-gradient: linear-gradient(135deg, #091127 0%, #02d3cc 100%);
     }
     
-    body {
-      font-family: 'Arial', sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
       background: var(--background-gradient);
       color: var(--text-color);
-      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     
     header {
@@ -67,11 +74,12 @@
     .nav-links a:hover {
       color: var(--primary-color);
     }
-    
+
     main {
       max-width: 1200px;
       margin: 40px auto;
       padding: 0 20px;
+      flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
     }
     
     .hero {
@@ -109,29 +117,22 @@
       text-align: center;
     }
     
-    .map {
-      height: 400px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    
     footer {
       background-color: rgba(9, 17, 39, 0.8);
       color: var(--text-color);
       text-align: center;
       padding: 20px 0;
-      margin-top: 60px;
     }
 
     .logo {
-  display: flex;
-  align-items: center; /* Alinha a imagem e o texto verticalmente */
-}
+      display: flex;
+      align-items: center; /* Alinha a imagem e o texto verticalmente */
+    }
 
-.logo img {
-  margin-right: 10px; /* Espaço entre a imagem e o texto */
-  height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
-}
+    .logo img {
+      margin-right: 10px; /* Espaço entre a imagem e o texto */
+      height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    }
   </style>
 </head>
 <body>
@@ -163,11 +164,7 @@
       <p><i class="fas fa-phone"></i> Fixo: (28) 3518-2328</p>
       <p><i class="fas fa-envelope"></i> E-mail: contato@grixs.com.br</p>
     </section>
-    
-    <!--<section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.1103677067455!2d-40.84102548508129!3d-20.155741586465763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb7b36b7e92a781%3A0x43b85e0d45ddd56!2sCachoeiro%20de%20Itapemirim%2C%20ES!5e0!3m2!1sen!2sbr!4v1651234567890!5m2!1sen!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-  </main>-->
+  </main>
   
   <footer>
     <p>&copy; 2024 Grixs - Soluções com Tecnologia. Todos os direitos reservados.</p>
