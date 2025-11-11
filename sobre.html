@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre a Grixs</title>
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #02d3cc;
+      --secondary-color: #091127;
+      --text-color: #ffffff;
+      --background-gradient: linear-gradient(135deg, #091127 0%, #02d3cc 100%);
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background-gradient);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(9, 17, 39, 0.8);
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .logo img {
+      margin-right: 10px;
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary-color);
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .value-card {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .value-card i {
+      font-size: 40px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 40px auto 0;
+      padding: 10px 20px;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-button:hover {
+      background-color: #00b3ad;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(9, 17, 39, 0.8);
+      color: var(--text-color);
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Logo Grixs">
+        Grixs
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="cameras.html">Câmeras</a>
+        <a href="voip.html">Telefonia</a>
+        <a href="network.html">Rede Estruturada</a>
+        <a href="wifi.html">Wi-Fi</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sobre a Grixs</h1>
+
+    <p>
+      A <strong>Grixs</strong> é uma empresa especializada em <strong>infraestrutura de tecnologia</strong>, oferecendo soluções completas em redes estruturadas, telefonia VoIP, câmeras de segurança, sistemas Wi-Fi corporativos e cabeamento de fibra óptica. 
+      Nosso objetivo é entregar <strong>conectividade, desempenho e segurança</strong> para empresas de todos os portes.
+    </p>
+
+    <p>
+      Com uma equipe técnica qualificada e foco em resultados, a Grixs atua com responsabilidade e compromisso, garantindo que cada projeto seja executado com qualidade, precisão e dentro dos mais altos padrões tecnológicos do mercado.
+    </p>
+
+    <h2>Nossa Missão</h2>
+    <p>
+      Proporcionar soluções tecnológicas inteligentes e confiáveis que conectem pessoas, empresas e sistemas, 
+      promovendo eficiência, segurança e inovação em cada projeto executado.
+    </p>
+
+    <h2>Visão</h2>
+    <p>
+      Ser reconhecida como referência em infraestrutura de tecnologia no Brasil, destacando-se pela excelência no atendimento e pela qualidade técnica dos serviços prestados.
+    </p>
+
+    <h2>Valores</h2>
+
+    <div class="values">
+      <div class="value-card">
+        <i class="fas fa-handshake"></i>
+        <h3>Comprometimento</h3>
+        <p>Entregamos resultados reais com responsabilidade e respeito aos prazos e necessidades de cada cliente.</p>
+      </div>
+
+      <div class="value-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Inovação</h3>
+        <p>Estamos sempre em busca de novas tecnologias e soluções para oferecer o melhor em infraestrutura.</p>
+      </div>
+
+      <div class="value-card">
+        <i class="fas fa-users"></i>
+        <h3>Parceria</h3>
+        <p>Construímos relacionamentos de confiança e longo prazo com nossos clientes e parceiros.</p>
+      </div>
+
+      <div class="value-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Segurança</h3>
+        <p>Garantimos estabilidade e proteção em todos os sistemas implantados, do início ao fim.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="back-button">← Voltar</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Grixs - Soluções com Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -108,8 +108,14 @@
       gap: 30px;
       margin-bottom: 60px;
     }
+
+    .services a {
+      text-decoration: none;
+      color: inherit;
+    }
     
     .service {
+      display: block;
       background-color: rgba(255, 255, 255, 0.1);
       padding: 30px;
       border-radius: 10px;
@@ -121,6 +127,8 @@
     .service:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      background-color: rgba(255, 255, 255, 0.15);
+      cursor: pointer;
     }
     
     .service img {
@@ -310,7 +318,8 @@
         <a href="#services">Serviços</a>
         <!--<a href="#gallery">Galeria</a> -->
         <a href="contato.html">Contato</a>
-	<a href="https://grixs.tomticket.com">Suporte</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="https://grixs.tomticket.com">Suporte</a>
       </div>
     </nav>
   </header>
@@ -323,33 +332,36 @@
       <a href="https://wa.me/552835182328?text=Olá!%20Vim%20pelo%20site!" 
          class="whatsapp-button" target="_blank">Entre em Contato pelo WhatsApp</a>
     </section>
-    
-    <section id="services" class="services">
-      <div class="service">
-        <img src="cameras.jpg" alt="Sistema de câmeras de segurança" width="250" height="150">
-        <h3>Câmeras de Segurança</h3>
-        <p>Monitoramento 24/7 com câmeras de alta resolução</p>
-      </div>
-      <div class="service">
-        <img src="voip.jpg" alt="Sistema de telefonia VoIP" width="250" height="150">
-        <h3>Telefonia VoIP</h3>
-        <p>Comunicação eficiente e econômica para sua empresa</p>
-      </div>
-      <div class="service">
-        <img src="network.jpg" alt="Rede estruturada de computadores" width="250" height="150">
-        <h3>Rede Estruturada</h3>
-        <p>Infraestrutura de rede confiável e de alto desempenho</p>
-      </div>
-      <div class="service">
-        <img src="fiber.jpg" alt="Cabeamento de fibra ótica" width="250" height="150">
-        <h3>Fibra Ótica</h3>
-        <p>Conexões ultrarrápidas com cabeamento de fibra ótica</p>
-      </div>
-      <div class="service">
-        <img src="wifi.jpg" alt="Wi-Fi de alta performance" width="250" height="150">
-        <h3>Wi-Fi de Alta Performance</h3>
-        <p>Conexões rápidas e estáveis para todas as suas necessidades de conectividade</p>
-      </div>
+        <section id="services" class="services">
+          <a href="cameras.html" class="service">
+            <img src="cameras.jpg" alt="Sistema de câmeras de segurança" width="250" height="150">
+            <h3>Câmeras de Segurança</h3>
+            <p>Monitoramento 24/7 com câmeras de alta resolução</p>
+          </a>
+
+          <a href="voip.html" class="service">
+            <img src="voip.jpg" alt="Sistema de telefonia VoIP" width="250" height="150">
+            <h3>Telefonia VoIP</h3>
+            <p>Comunicação eficiente e econômica para sua empresa</p>
+          </a>
+
+          <a href="network.html" class="service">
+            <img src="network.jpg" alt="Rede estruturada de computadores" width="250" height="150">
+            <h3>Rede Estruturada</h3>
+            <p>Infraestrutura de rede confiável e de alto desempenho</p>
+          </a>
+
+          <a href="fiber.html" class="service">
+            <img src="fiber.jpg" alt="Cabeamento de fibra ótica" width="250" height="150">
+            <h3>Fibra Ótica</h3>
+            <p>Conexões ultrarrápidas com cabeamento de fibra ótica</p>
+          </a>
+
+          <a href="wifi.html" class="service">
+            <img src="wifi.jpg" alt="Wi-Fi de alta performance" width="250" height="150">
+            <h3>Wi-Fi de Alta Performance</h3>
+            <p>Conexões rápidas e estáveis para todas as suas necessidades de conectividade</p>
+          </a>
     </section>
     
     <!--<section id="gallery" class="gallery">
