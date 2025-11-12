@@ -3,21 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grixs - Soluções com Tecnologia</title>
+  <title>Contato - Grixs - Soluções com Tecnologia</title>
   <link rel="icon" href="logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFBCCVCHQY"></script>
-	<script>
- 	 	window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
- 	 	gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFBCCVCHQY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GFBCCVCHQY');
+  </script>
 
-  		gtag('config', 'G-GFBCCVCHQY');
-	</script>
-  
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Grixs - Contato">
+  <meta property="og:description" content="Entre em contato com a Grixs para soluções em tecnologia.">
+  <meta property="og:image" content="https://www.grixs.com.br/preview.jpg">
+  <meta property="og:image:alt" content="Logo da Grixs">
+  <meta property="og:url" content="https://www.grixs.com.br/contato.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Grixs">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grixs - Contato">
+  <meta name="twitter:description" content="Entre em contato com a Grixs para soluções em tecnologia.">
+  <meta name="twitter:image" content="https://www.grixs.com.br/preview.jpg">
+
   <style>
+    /* Seu CSS existente */
     :root {
       --primary-color: #02d3cc;
       --secondary-color: #091127;
@@ -25,28 +41,21 @@
       --text-color: #ffffff;
       --background-gradient: linear-gradient(135deg, #091127 0%, #02d3cc 100%);
     }
-    
-    * {
+    body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    
-    html, body {
-      height: 100%;
-      font-family: 'Arial', sans-serif;
       background: var(--background-gradient);
       color: var(--text-color);
-      display: flex;
-      flex-direction: column;
+      min-height: 100vh;
+      display: flex; /* Para o footer ficar no final */
+      flex-direction: column; /* Para o footer ficar no final */
     }
-    
     header {
       background-color: rgba(9, 17, 39, 0.8);
       padding: 20px 0;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    
     nav {
       display: flex;
       justify-content: space-between;
@@ -55,86 +64,119 @@
       margin: 0 auto;
       padding: 0 20px;
     }
-    
     .logo {
       font-size: 24px;
       font-weight: bold;
       color: var(--primary-color);
+      display: flex;
+      align-items: center;
     }
-    
+    .logo img {
+      margin-right: 10px;
+      height: 40px;
+    }
     .nav-links {
       display: flex;
       gap: 20px;
     }
-    
     .nav-links a {
       color: var(--text-color);
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s ease;
     }
-    
     .nav-links a:hover {
       color: var(--primary-color);
     }
-
     main {
-      max-width: 1200px;
+      flex: 1; /* Para o main ocupar o espaço restante e empurrar o footer */
+      max-width: 800px; /* Largura do conteúdo principal */
       margin: 40px auto;
       padding: 0 20px;
-      flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
     }
-    
-    .hero {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    
     h1 {
-      font-size: 48px;
+      font-size: 36px;
       margin-bottom: 20px;
       color: var(--primary-color);
+      text-align: center;
     }
-    
     .contact-info {
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    .contact-info p {
+      margin: 5px 0;
+    }
+    .contact-info a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: var(--accent-color);
+    }
+    /* Estilos para o formulário */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 40px;
+      padding: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-bottom: 40px;
     }
-    
-    .contact-info h2 {
-      color: var(--primary-color);
-      margin-bottom: 20px;
+    form label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block; /* Para a label ficar acima do input */
     }
-    
-    .contact-info p {
-      margin-bottom: 10px;
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      padding: 12px;
+      border: 1px solid var(--primary-color);
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.05); /* Um pouco mais transparente */
+      color: var(--text-color);
+      font-size: 16px;
+      width: 100%; /* Ocupa toda a largura disponível */
+      box-sizing: border-box; /* Inclui padding e border na largura */
     }
-    
-    .contact-info i {
-      color: var(--primary-color);
-      margin-right: 10px;
-      width: 20px;
-      text-align: center;
+    form input::placeholder,
+    form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.6);
     }
-    
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: var(--accent-color); /* Borda mais clara ao focar */
+      box-shadow: 0 0 0 2px rgba(2, 211, 204, 0.3); /* Sombra suave ao focar */
+    }
+    form button[type="submit"] {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px; /* Botão mais arredondado */
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      align-self: center; /* Centraliza o botão */
+      width: auto; /* Largura automática */
+      min-width: 150px; /* Largura mínima */
+    }
+    form button[type="submit"]:hover {
+      background-color: #01b5af;
+      transform: scale(1.05);
+    }
     footer {
       background-color: rgba(9, 17, 39, 0.8);
       color: var(--text-color);
       text-align: center;
       padding: 20px 0;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center; /* Alinha a imagem e o texto verticalmente */
-    }
-
-    .logo img {
-      margin-right: 10px; /* Espaço entre a imagem e o texto */
-      height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+      margin-top: 60px; /* Espaço antes do footer */
     }
   </style>
 </head>
@@ -148,33 +190,48 @@
       <div class="nav-links">
         <a href="index.html">Início</a>
         <a href="index.html#services">Serviços</a>
-        <!--<a href="#gallery">Galeria</a> -->
+        <a href="contato.html">Contato</a>
         <a href="sobre.html">Sobre</a>
+        <a href="https://grixs.tomticket.com" target="_blank">Suporte</a>
       </div>
     </nav>
   </header>
-  
-  <main>
-    <section class="hero">
-      <h1>Entre em Contato</h1>
-      <p>Estamos aqui para atender suas necessidades com tecnologia!</p>
-    </section>
-    
-    <section class="contact-info">
-      <h2>Informações de Contato</h2>
-      <p><i class="fas fa-user"></i> Thiago R Silva</p>
-      <p><i class="fas fa-mobile-alt"></i> Celular: (28) 99938-4649</p>
-      <p><i class="fas fa-phone"></i> Fixo: (28) 3518-2328</p>
-      <p><i class="fas fa-envelope"></i> E-mail: contato@grixs.com.br</p>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2025 Grixs - Soluções com Tecnologia. Todos os direitos reservados.</p>
-  </footer>
 
-  <script>
-    // Você pode adicionar scripts específicos para a página de contato aqui, se necessário
-  </script>
+  <main>
+    <h1>Entre em Contato</h1>
+    <div class="contact-info">
+      <p>Preencha o formulário abaixo ou utilize nossos outros canais:</p>
+      <p>WhatsApp: <a href="https://wa.me/552835182328?text=Olá!%20Vim%20pelo%20site!" target="_blank">(28) 3518-2328</a></p>
+      <p>E-mail: <a href="mailto:contato@grixs.com.br">contato@grixs.com.br</a></p>
+    </div>
+
+    <!-- O FORMULÁRIO NETLIFY COMEÇA AQUI -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+      <!-- Campo oculto para o honeypot (anti-spam) -->
+      <p class="hidden">
+        <label>Não preencha este campo: <input name="bot-field" /></label>
+      </p>
+
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Assunto:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <!-- O FORMULÁRIO NETLIFY TERMINA AQUI -->
+
+  </main>
+
+  <footer>
+    <p>&amp;copy; 2025 Grixs - Soluções com Tecnologia. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
