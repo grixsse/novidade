@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte - Grixs - Soluções com Tecnologia</title>
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFBCCVCHQY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GFBCCVCHQY');
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #02d3cc;
+      --secondary-color: #091127;
+      --accent-color: #ffffff;
+      --text-color: #ffffff;
+      --background-gradient: linear-gradient(135deg, #091127 0%, #02d3cc 100%);
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background-gradient);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(9, 17, 39, 0.8);
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      margin-right: 10px;
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .support-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .support-button:hover {
+      background-color: #01b5af;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(9, 17, 39, 0.8);
+      color: var(--text-color);
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      Grixs
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="index.html#services">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="sobre.html">Sobre</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Suporte Técnico</h1>
+  <p>
+    Precisa abrir um chamado de suporte? Clique no botão abaixo para acessar a plataforma de atendimento Grixs.
+  </p>
+
+  <a class="support-button" href="https://grixs.tomticket.com/" target="_blank">
+    Abrir Chamado de Suporte
+  </a>
+</main>
+
+<footer>
+  <p>&copy; 2025 Grixs - Soluções com Tecnologia. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
