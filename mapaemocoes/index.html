@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mapa de Referências - BNI ES Emoções</title>
-<style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZoFvpTiEtKOxv1ComEEq1w7GEatcuSjBFONSlxEvW-dFH9BQst09tWrSa0ZD9qn9zQ09H68ZtOAH0CvKrFqa0lcYjk_3p5G4D6gLaDbKFadE7s6ryLhExC10wBARuBR1bownnaMdIQtqpBE-VfI7jVrlNWUj920zQLYHVDWD5IFSdvaGPutGJ0AAOqcKaDwZ0qY5bK6pGB8XpFzc9x4LhefPAKma_sWe8IvRzEBJy6FBB8zH9XNr7d_I1yNlkYA2DZLV52R2CQ1lsI5dq4pFosh4Z2tI9ZZBsC1b6biZcxPwNAVoER5Jr-Pv3K2NJLJuBu7jHUi0dFvwHhF-Bp9CPg" charset="UTF-8"></script><style>
   :root { --red:#cf142b; --ink:#151515; --bg:#f3f4f6; }
   * { box-sizing:border-box; }
   body { margin:0; font-family:Arial, Helvetica, sans-serif; background:var(--bg); color:var(--ink); }
@@ -34,7 +34,6 @@
 <body>
   <header class="toolbar">
     <h1>Mapa de Referências - BNI ES Emoções</h1>
-    <button class="secondary" id="clearBtn" type="button">Limpar pedidos</button>
     <button class="primary" id="pdfBtn" type="button">Baixar PDF</button>
     <span class="status" id="status">Preenchimento local desta sessão</span>
   </header>
@@ -81,13 +80,6 @@
     values = {};
     document.querySelectorAll('textarea.ref').forEach(t => t.value = '');
     status.textContent = 'Página limpa';
-  });
-
-  document.getElementById('clearBtn').addEventListener('click', () => {
-    if (!confirm('Limpar todos os pedidos de referência preenchidos?')) return;
-    values = {};
-    document.querySelectorAll('textarea.ref').forEach(t => t.value='');
-    status.textContent = 'Campos limpos';
   });
 
   function latin1Bytes(s) {
